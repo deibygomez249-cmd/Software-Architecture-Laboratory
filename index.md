@@ -6,9 +6,10 @@
 
 - Jhon Alexander Correa Velasquez
 - Holman Steven Herrera Alva 
-- Andres julian Forero Gacha 
+- Andres julian Forero Gacha
+- Edwin Mateo Gomez Beltrán
 - Deiby Esteban Gomez Naranjo
-- Edwin Mateo Gomez Beltrán 
+ 
 ---
 
 # # Calidad y alcance
