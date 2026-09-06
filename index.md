@@ -11,136 +11,79 @@
 - Edwin Mateo Gomez Beltrán 
 ---
 
-# 1. Antecedentes
+# Calidad y alcance
 
-En esta sección se presentan las aplicaciones similares investigadas por los integrantes del grupo. Se realiza una comparación teniendo en cuenta aspectos como funcionalidades, módulos, costos, características principales y otros elementos relevantes para el proyecto.
+## Requisitos no funcionales
 
----
+Los requisitos no funcionales determinan las características de calidad, así como las condiciones bajo las que debe funcionar MotoTaller. Son requisitos que hay que realizar porque la aplicación manejará información de clientes, motocicletas, servicios, ventas, repuestos, usuarios e inventarios.
 
-# 2. Requisitos Funcionales
-
-Los requisitos funcionales describen las principales funciones que debe realizar el sistema.
-
-En esta sección se presenta la descomposición funcional del sistema mediante un árbol de requisitos funcionales, con un máximo de cuatro niveles.
-
-Los requisitos funcionales serán definidos de acuerdo con las necesidades identificadas para la aplicación seleccionada.
-
----
-
-# 3. Requisitos No Funcionales
-
-## Aplicación #4: MotoTaller
-
-MotoTaller es una solución orientada a la gestión de talleres de motocicletas. El sistema debe cumplir diferentes características de calidad para garantizar un funcionamiento seguro, confiable, eficiente y fácil de utilizar.
-
-### Requisitos no funcionales
-
-| Requisito | Descripción | Justificación |
-|---|---|---|
-| **Seguridad** | El sistema debe proteger la información contra accesos no autorizados. | Se manejará información de clientes, motocicletas, servicios, ventas e inventario. |
-| **Autenticación** | Los usuarios deben ingresar mediante usuario y contraseña. | Permite identificar y autenticar a cada usuario del sistema. |
-| **Roles** | El sistema debe permitir diferentes tipos de usuarios. | Los administradores y empleados pueden tener diferentes responsabilidades. |
-| **Permisos** | Cada usuario debe acceder únicamente a las funciones autorizadas para su rol. | Evita operaciones y accesos no autorizados. |
-| **Protección de la información** | La información almacenada debe protegerse contra accesos, modificaciones o pérdidas no autorizadas. | Permite proteger la información de los clientes y del negocio. |
-| **Rendimiento** | El sistema debe ofrecer tiempos de respuesta adecuados en sus operaciones principales. | Permite que los empleados realicen sus actividades de manera eficiente. |
-| **Capacidad de usuarios** | El sistema debe permitir que varios usuarios trabajen simultáneamente. | Diferentes empleados pueden necesitar utilizar el sistema al mismo tiempo. |
-| **Disponibilidad** | El sistema debe estar disponible durante el horario de funcionamiento del taller. | Los empleados necesitan acceder a la información durante sus actividades. |
-| **Escalabilidad** | La arquitectura debe permitir agregar nuevos módulos y funcionalidades. | El sistema puede crecer de acuerdo con las necesidades futuras del taller. |
-| **Mantenibilidad** | El código debe estar organizado y utilizar una arquitectura modular. | Facilita corregir errores, realizar mantenimiento y agregar funcionalidades. |
-| **Usabilidad** | La interfaz debe ser sencilla, clara e intuitiva. | Los empleados deben poder utilizar el sistema fácilmente. |
-| **Integridad** | La información debe mantenerse correcta, consistente y confiable. | Evita errores en datos de clientes, servicios, ventas e inventario. |
-
-### Justificación de los requisitos no funcionales
-
-Los requisitos no funcionales seleccionados son importantes porque permiten garantizar que MotoTaller no solamente cumpla con sus funciones principales, sino que también sea seguro, confiable y fácil de utilizar.
-
-La seguridad, autenticación, roles, permisos y protección de la información permiten controlar el acceso al sistema y proteger los datos de los clientes y del taller.
-
-El rendimiento, la capacidad de usuarios y la disponibilidad permiten que los empleados puedan utilizar el sistema de manera eficiente durante las actividades del taller.
-
-Por otra parte, la escalabilidad y la mantenibilidad permiten que el sistema pueda crecer y actualizarse en el futuro sin necesidad de reconstruirlo completamente.
-
-Finalmente, la usabilidad facilita la interacción de los usuarios con el sistema, mientras que la integridad permite mantener información correcta y consistente.
+| **Requisito**                    | **Descripción**                                                                                                           | **Justificación**                                                                                                           |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Seguridad**                    | El sistema debe proteger la información y evitar accesos no autorizados.                                                  | MotoTaller manejará información de clientes, ventas, servicios e inventario que debe mantenerse protegida.                  |
+| **Autenticación**                | Los usuarios deberán ingresar mediante un usuario y contraseña.                                                           | Permite identificar a cada usuario y controlar el acceso al sistema.                                                        |
+| **Roles**                        | El sistema deberá permitir diferentes tipos de usuarios, de acuerdo con sus funciones.                                    | Un administrador puede necesitar más funcionalidades que un empleado del taller.                                            |
+| **Permisos**                     | Cada usuario tendrá acceso únicamente a las funciones que correspondan a su rol.                                          | Permite limitar el acceso a información y operaciones que no sean necesarias para cada usuario.                             |
+| **Protección de la información** | Los datos almacenados deberán protegerse contra accesos, modificaciones o pérdidas no autorizadas.                        | Es necesario preservar la confidencialidad y seguridad de la información del taller y sus clientes.                         |
+| **Rendimiento**                  | Las operaciones principales del sistema deberán tener un tiempo de respuesta adecuado.                                    | Un sistema con buena velocidad permite realizar las actividades del taller de manera más eficiente.                         |
+| **Capacidad de usuarios**        | El sistema deberá permitir que varios usuarios trabajen simultáneamente sin afectar significativamente su funcionamiento. | Diferentes empleados pueden necesitar utilizar el sistema al mismo tiempo.                                                  |
+| **Disponibilidad**               | El sistema deberá estar disponible durante el horario de funcionamiento del taller.                                       | Los empleados necesitan consultar y registrar información mientras realizan sus actividades.                                |
+| **Escalabilidad**                | La arquitectura deberá permitir agregar nuevos módulos y funcionalidades en el futuro.                                    | El sistema podrá crecer posteriormente con funciones como reportes, facturación o notificaciones.                           |
+| **Mantenibilidad**               | El código deberá estar organizado y utilizar una arquitectura modular.                                                    | Facilita corregir errores, realizar actualizaciones y agregar nuevas funcionalidades.                                       |
+| **Usabilidad**                   | La interfaz deberá ser sencilla, clara e intuitiva.                                                                       | Los trabajadores del taller deben poder utilizar el sistema fácilmente sin requerir conocimientos avanzados de informática. |
+| **Integridad**                   | La información almacenada debe ser consistente, correcta y confiable.                                                     | Evita errores como cantidades incorrectas de inventario o información asociada al cliente equivocado.                       |
 
 ---
 
-# 4. Alcance del Sistema
+## Alcance del sistema
 
-## Aplicación #4: MotoTaller
-
-El alcance de MotoTaller establece las funcionalidades que serán incluidas en la primera versión del sistema y aquellas que quedarán para futuras versiones.
+El alcance de MotoTaller indica las funcionalidades que se consideran para la primera versión del sistema y aquellas que, al menos inicialmente, quedarán excluidas del alcance. Esto permite concentrar los recursos del proyecto en las funciones básicas e imprescindibles para la gestión de un taller de motocicletas.
 
 ### Dentro del proyecto
 
-La primera versión de MotoTaller incluirá:
+El primer lanzamiento de MotoTaller permitirá tener las siguientes funcionalidades:
 
-- **Gestión de clientes:** registro, consulta y actualización de información de los clientes.
-- **Gestión de motocicletas:** registro de motocicletas y asociación con sus propietarios.
-- **Gestión de servicios:** registro y seguimiento de los servicios realizados.
-- **Ventas:** registro y consulta de las ventas realizadas por el taller.
-- **Repuestos:** registro y administración de los repuestos disponibles.
-- **Usuarios:** creación y administración de los usuarios del sistema.
-- **Inventario:** control de existencias y movimientos de los repuestos.
-- **Base de datos:** almacenamiento organizado de la información.
-- **Sistema web:** acceso al sistema mediante una interfaz web.
-- **API/Backend:** procesamiento de la lógica del sistema y comunicación con la base de datos.
+* **Gestión de clientes:** poder registrar, consultar y mantener información de los clientes.
+* **Gestión de motocicletas:** poder registrar motocicletas e identificar sus propietarios.
+* **Gestión de servicios:** poder registrar y hacer seguimiento de los servicios realizados a las motocicletas.
+* **Ventas:** poder registrar y consultar el detalle de las ventas realizadas por el taller.
+* **Repuestos:** poder registrar y gestionar los repuestos disponibles.
+* **Usuarios:** poder crear y gestionar usuarios del sistema.
+* **Inventario:** poder controlar las existencias y movimientos de los repuestos.
+* **Base de datos:** poder almacenar la información del sistema de forma organizada y estructurada.
+* **Sistema web:** poder acceder a las funcionalidades mediante una interfaz web.
+* **API/Backend:** poder procesar la lógica del sistema y la comunicación con la base de datos.
 
 ### Fuera de la primera versión
 
-Las siguientes funcionalidades no serán incluidas inicialmente:
+Con el fin de mantener un alcance realista, no se considerarán las siguientes funcionalidades para la primera versión:
 
-- Aplicación móvil nativa.
-- Pasarela de pagos.
-- Integraciones bancarias.
-- Inteligencia Artificial avanzada.
-- Integración con proveedores externos.
-- Administración avanzada de múltiples sedes.
+* Aplicación móvil nativa.
+* Pasarela de pagos.
+* Integraciones bancarias.
+* Inteligencia Artificial avanzada.
+* Integración con proveedores externos.
+* Administración avanzada de múltiples sedes.
 
-Estas funcionalidades podrán ser consideradas en futuras versiones dependiendo de las necesidades del negocio y de los recursos disponibles.
-
----
-
-## Triple Restricción
-
-El alcance de MotoTaller se establece teniendo en cuenta la triple restricción de los proyectos: **alcance, tiempo y costo**.
-
-| Restricción | Aplicación en MotoTaller |
-|---|---|
-| **Alcance** | Se priorizan las funciones principales para gestionar clientes, motocicletas, servicios, ventas, repuestos, usuarios e inventario. |
-| **Tiempo** | La primera versión se limita a las funciones esenciales para poder desarrollar el sistema dentro del tiempo disponible. |
-| **Costo** | Las funcionalidades más complejas o que requieren servicios externos se dejan para futuras versiones. |
-
-### Justificación del alcance
-
-El alcance de MotoTaller se limita a las funcionalidades esenciales para mantener un proyecto realista y posible de desarrollar dentro del tiempo y los recursos disponibles.
-
-Funcionalidades como una aplicación móvil nativa, pasarelas de pago, integraciones bancarias, inteligencia artificial avanzada y conexiones con proveedores externos aumentan la complejidad, el tiempo de desarrollo y los posibles costos del proyecto.
-
-Por esta razón, estas funcionalidades serán consideradas para futuras versiones, mientras que la primera versión se concentrará en las necesidades principales del taller.
+Estas funcionalidades podrán ser consideradas en futuras versiones del sistema, dependiendo de las necesidades del negocio y de los recursos disponibles.
 
 ---
 
-# 5. Tecnologías Seleccionadas
+## Justificación del alcance mediante la triple restricción
 
-En esta sección se presentan las tecnologías seleccionadas por el grupo para el desarrollo del proyecto.
+La definición del alcance se realiza teniendo en cuenta la triple restricción de los proyectos: **alcance, tiempo y costo**.
 
-Se deben incluir las tecnologías utilizadas para:
+| **Restricción** | **Aplicación en MotoTaller**                                                                                                                 |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Alcance**     | Se priorizan las funcionalidades principales para la gestión de clientes, motocicletas, servicios, ventas, repuestos, usuarios e inventario. |
+| **Tiempo**      | Se limita la primera versión a las funciones esenciales para poder desarrollar y entregar el sistema dentro del tiempo disponible.           |
+| **Costo**       | Se dejan para futuras versiones las funcionalidades que pueden requerir mayores recursos, servicios externos o infraestructura adicional.    |
 
-- Desarrollo del sistema.
-- Backend.
-- Frontend.
-- Base de datos.
-- Arquitectura.
-- Control de versiones.
-- Despliegue.
+La eliminación de funcionalidades tales como una aplicación móvil nativa, pasarelas de pago, integraciones bancarias, inteligencia artificial avanzada y conexión con proveedores externos permite reducir la complejidad inicial del proyecto.
 
----
+De esta manera, el equipo puede concentrarse en hacer funcionar adecuadamente las funcionalidades principales del sistema, sin salir de los límites de tiempo y costo.
 
-# 6. Referencias
+Así, el alcance inicial de MotoTaller busca encontrar un equilibrio entre las necesidades principales del taller y los recursos disponibles para el desarrollo. Las funcionalidades que no se alcancen a incluir podrán incorporarse posteriormente mediante nuevas versiones del sistema.
 
-En esta sección se incluyen las fuentes consultadas durante el desarrollo del proyecto, utilizando las normas APA.
-
-Se deben incluir:
 
 - Fuentes utilizadas para investigar las aplicaciones similares.
 - Documentación oficial de las tecnologías utilizadas.
